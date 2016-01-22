@@ -1,31 +1,32 @@
 {
-    "name": "mongodb-migrate",
-    "version": "1.2.3",
-    "description": "Migration framework for mongo in node",
-    "keywords": [
-        "mongo",
-        "migrate",
-        "migrations"
-    ],
-    "author": {
-        "name": "Austin Floyd",
-        "email": "austin.floyd@sparcedge.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/afloyd/mongo-migrate"
-    },
-    "dependencies": {
-        "verror": "^1.6.0"
-    },
-    "peerDependencies": {
-        "mongodb": ">=2.0.0 <3.0"
-    },
-    "main": "index",
-    "engines": {
-        "node": ">= 0.8.x"
-    },
-    "bin": {
-        "mongo-migrate": "./bin/mongo-migrate.js"
-    }
+  "name": "mongodb-migrate",
+  "version": "1.2.3",
+  "description": "Migration framework for mongo in node",
+  "keywords": [
+    "mongo",
+    "migrate",
+    "migrations"
+  ],
+  "author": {
+    "name": "Austin Floyd",
+    "email": "austin.floyd@sparcedge.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/afloyd/mongo-migrate"
+  },
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "verror": "^1.6.0"
+  },
+  "peerDependencies": {
+    "mongodb": ">=2.0.0 <3.0"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.8.x"
+  },
+  "bin": {
+    "mongo-migrate": "./bin/mongo-migrate.js"
+  }
 }
