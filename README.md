@@ -134,26 +134,13 @@ The default configuration filename is `default-config.json`. If you wish to use 
 ### Config file property name
 Inside the configuration file, mongodb-migrate expects the database connection information to be nested inside an object. The default object name is `mongoAppDb`. If you wish to change this you can use the `-dbn <string>` option:
 ```
-	$ node .\node_modules\mongodb-migrate -runmm -dbn dbSettings up
+	$ node .\node_modules\mongodb-migrate -runmm -dbn dbUrl up
 	migration : complete
 ```
 This would tell mongodb-migrate your config file looks something like:
 ```
 	{
-		dbSettings: {
-			host: 'localhost',
-			db: 'myDatabaseName',
-			//port: 27017 //Specifying a port is optional
-		}
-	}
-```
-To connect to a replica set, use  the `replicaSet` property:
-```
-	{
-		dbSettings: {
-			replicaSet : ["localhost:27017","localhost:27018","localhost:27019"],
-			db: 'myDatabaseName',
-		}
+		dbUrl: url
 	}
 ```
 
