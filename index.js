@@ -1,3 +1,8 @@
+process.on('unhandledRejection', reason => {
+    console.error('unhandledRejection', reason);
+    process.exit(1);     
+});
+
 /**
  * Arguments.
  */
